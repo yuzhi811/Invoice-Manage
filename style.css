@@ -1,0 +1,56 @@
+html,
+body {
+  /* display: grid; */
+  align-content: center;
+  padding: 10px;
+}
+
+body {
+  padding: 10px;
+}
+.eachData {
+  border: 1px solid rgb(223, 215, 215);
+  padding: 8px;
+  margin: 3px;
+  border-radius: 15px;
+  display: flex;
+}
+/* nav {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.templateNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  font-size: 23px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.eachData {
+  border: 1px solid rgb(223, 215, 215);
+  padding: 8px;
+  margin: 3px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+} */
+/*
+.invoice-number {
+  padding: 0 15px;
+}
+.invoice-amount,
+.invoice-status,
+.invoice-client {
+  padding-right: 15px;
+} */
