@@ -8,6 +8,12 @@ body {
 body {
   padding: 10px;
 }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .eachData {
   border: 1px solid rgb(223, 215, 215);
   padding: 8px;
@@ -15,6 +21,47 @@ body {
   border-radius: 15px;
   display: flex;
 }
+
+.form {
+  justify-self: center;
+  display: grid;
+  grid-gap: 1rem;
+  align-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-control,
+.form-select {
+  display: block;
+  padding: 15px 15px;
+  font-size: 1rem;
+}
+
+.updateBtn {
+  padding: 15px;
+  background-color: #481252;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.editBtn {
+  /* background-color: transparent; */
+  border: 1px solid #3673e6;
+  color: #3673e6;
+  text-decoration: none;
+}
+.deleteBtn {
+  border: 1px solid #bc2e21;
+  color: #bc2e21;
+  text-decoration: none;
+}
+
 /* nav {
   font-size: 18px;
   display: flex;

@@ -1,4 +1,6 @@
 <?php 
+session_status() === PHP_SESSION_ACTIVE ?: session_start();
+// session_start() creates a session or resumes the current one based on a session identifier passed via a GET or POST request, or passed via a cookie.
   $statuses = ['all', 'draft', 'pending', 'paid'];
 
   $invoices = [
@@ -178,3 +180,15 @@
       'email'  => 'darcythompson@enormo.com',
     ]
   ];
+
+  // check to see if invoices' key is stored in the session
+  if (isset($_SESSION['invoices'])){
+    // $invoices를 세션에 있는 데이터로 업데이트
+    $invoices = $_SESSION['invoices'];
+  } else {
+    // if there is no data stored in the session, store it into session
+    $_SESSION['invoices'] = $invoices;
+  }
+
+  // Clear the session data when it is no longer needed
+// session_destroy();
